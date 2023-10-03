@@ -12,11 +12,5 @@ public class PortfolioBuddyApplication {
 		SpringApplication.run(PortfolioBuddyApplication.class, args);
 	}
 
-	@Bean
-	public CommandLineRunner run() {
-		return args -> {
-			System.exit(147);
-		};
-	}
 
 }
