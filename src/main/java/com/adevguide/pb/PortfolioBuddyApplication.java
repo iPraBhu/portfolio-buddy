@@ -12,5 +12,4 @@ public class PortfolioBuddyApplication {
 		SpringApplication.run(PortfolioBuddyApplication.class, args);
 	}
 
-
 }

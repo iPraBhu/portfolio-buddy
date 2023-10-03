@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <!-- Define the log file location -->
-    <property name="LOG_DIR" value="/home/opc/portfolio-buddy/log/application.log" />
+    <!-- <property name="LOG_DIR" value="/home/opc/portfolio-buddy/log" /> -->
+
+
+ 
+	<springProfile name="dev">
+    	<property name="LOG_DIR" value="C:\Users\PBhuite\git-projects\portfolio-buddy\log" />
+    </springProfile>
+ 
+
+ 
+	<springProfile name="prod">
+    	<property name="LOG_DIR" value="/home/opc/portfolio-buddy/log" />
+    </springProfile>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
